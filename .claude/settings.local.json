@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__d952bb26-887b-4fe6-8eca-d3f1402190df__notion-get-users",
+      "mcp__d952bb26-887b-4fe6-8eca-d3f1402190df__notion-search",
+      "mcp__d952bb26-887b-4fe6-8eca-d3f1402190df__notion-fetch",
+      "mcp__d952bb26-887b-4fe6-8eca-d3f1402190df__notion-create-pages",
+      "mcp__d952bb26-887b-4fe6-8eca-d3f1402190df__notion-update-page",
+      "mcp__d952bb26-887b-4fe6-8eca-d3f1402190df__notion-create-database",
+      "mcp__d952bb26-887b-4fe6-8eca-d3f1402190df__notion-create-view",
+      "mcp__d952bb26-887b-4fe6-8eca-d3f1402190df__notion-update-data-source",
+      "Bash(dir \"C:\\\\Negocio Web\")",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}
