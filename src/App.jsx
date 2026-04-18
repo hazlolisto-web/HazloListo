@@ -15,7 +15,7 @@ const TICKER_ITEMS = [
 const PLANS = [
   {
     name: 'Express',
-    price: '$99.000',
+    price: '$79.000',
     featured: false,
     features: [
       '1 página landing completa',
@@ -28,7 +28,7 @@ const PLANS = [
   },
   {
     name: 'Pro',
-    price: '$149.000',
+    price: '$100.000',
     featured: true,
     features: [
       'Hasta 4 secciones',
@@ -42,7 +42,7 @@ const PLANS = [
   },
   {
     name: 'Business',
-    price: '$199.000',
+    price: '$150.000',
     featured: false,
     features: [
       'Multi-página hasta 6 secciones',
@@ -247,7 +247,7 @@ export default function App() {
       {/* FOOTER */}
       <footer className="footer">
         <span className="logo">Hazlo Listo</span>
-        <span className="footer-copy">© 2025 · Hazlo listo. En 24 horas.</span>
+        <span className="footer-copy">© 2026 · Hazlo listo. En 24 horas.</span>
         <a className="footer-ig" href="https://instagram.com/hazlolisto" target="_blank" rel="noreferrer">
           @hazlolisto
         </a>
