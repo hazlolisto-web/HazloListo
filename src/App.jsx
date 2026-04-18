@@ -107,7 +107,7 @@ export default function App() {
       {/* NAVBAR */}
       <nav className="navbar">
         <span className="logo">Hazlo Listo</span>
-        <a className="btn btn-lime" href={WA} target="_blank" rel="noreferrer">
+        <a className="btn btn-primary" href={WA} target="_blank" rel="noreferrer">
           Quiero mi web →
         </a>
       </nav>
@@ -127,7 +127,7 @@ export default function App() {
             Pagas, llenas un formulario y mañana estás online.
           </p>
           <div className="hero-actions">
-            <a className="btn btn-lime lg" href={WA} target="_blank" rel="noreferrer">
+            <a className="btn btn-primary lg" href={WA} target="_blank" rel="noreferrer">
               Quiero mi web ahora →
             </a>
             <span className="hero-badge">🔒 Garantía de devolución si no te gusta</span>
@@ -239,7 +239,7 @@ export default function App() {
       <section className="cta-final fade-in">
         <h2 className="cta-title">¿Listo para estar<br />online mañana?</h2>
         <p className="cta-sub">Escríbenos hoy. Tu web estará lista en 24 horas.</p>
-        <a className="btn btn-black" href={WA} target="_blank" rel="noreferrer">
+        <a className="btn btn-cta" href={WA} target="_blank" rel="noreferrer">
           Escribir por WhatsApp →
         </a>
       </section>

@@ -1,21 +1,22 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --black:   #0A0A0A;
-  --black-2: #0F0F0F;
-  --black-3: #161616;
-  --lime:    #C3FF00;
-  --white:   #FFFFFF;
-  --muted:   #888888;
-  --border:  #222222;
+  --primary: #0EA5E9;
+  --secondary: #38BDF8;
+  --cta: #F97316;
+  --background: #F0F9FF;
+  --background-alt: #E0F2FE;
+  --text: #0C4A6E;
+  --muted: #64748B;
+  --border: #CBD5E1;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
-  background: var(--black);
-  color: var(--white);
-  font-family: 'DM Sans', sans-serif;
+  background: var(--background);
+  color: var(--text);
+  font-family: 'Plus Jakarta Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -38,10 +39,10 @@ body {
 }
 .marquee-wrapper {
   overflow: hidden;
-  background: var(--lime);
+  background: var(--primary);
   padding: 14px 0;
-  border-top: 2px solid var(--lime);
-  border-bottom: 2px solid var(--lime);
+  border-top: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
 }
 .marquee-track {
   display: flex;
@@ -50,10 +51,10 @@ body {
   animation: marquee 24s linear infinite;
 }
 .marquee-item {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 0.85rem;
-  color: var(--black);
+  color: var(--text);
   letter-spacing: 0.06em;
   padding-right: 0;
 }
@@ -67,15 +68,15 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px 48px;
-  background: rgba(10,10,10,0.94);
+  background: rgba(255,255,255,0.94);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
 .logo {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 800;
   font-size: 1.35rem;
-  color: var(--lime);
+  color: var(--primary);
   letter-spacing: -0.02em;
   text-decoration: none;
 }
@@ -85,7 +86,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
@@ -93,30 +94,30 @@ body {
   transition: background 0.18s, color 0.18s, border-color 0.18s;
   white-space: nowrap;
 }
-.btn-lime {
-  background: var(--lime);
-  color: var(--black);
-  border-color: var(--lime);
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
   padding: 12px 26px;
   font-size: 0.9rem;
 }
-.btn-lime:hover { background: transparent; color: var(--lime); }
-.btn-lime.lg    { padding: 18px 38px; font-size: 1.05rem; }
-.btn-black {
-  background: var(--black);
-  color: var(--lime);
-  border-color: var(--black);
+.btn-primary:hover { background: transparent; color: var(--primary); }
+.btn-primary.lg    { padding: 18px 38px; font-size: 1.05rem; }
+.btn-cta {
+  background: var(--cta);
+  color: white;
+  border-color: var(--cta);
   padding: 18px 38px;
   font-size: 1.05rem;
 }
-.btn-black:hover { background: white; color: var(--black); border-color: white; }
+.btn-cta:hover { background: white; color: var(--cta); border-color: var(--cta); }
 
 /* ── HERO ── */
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 140px 48px 100px;
+  padding: 100px 48px 100px;
   position: relative;
   overflow: hidden;
 }
@@ -125,10 +126,10 @@ body {
   right: 4%;
   top: 50%;
   transform: translateY(-50%);
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 800;
   font-size: clamp(8rem, 20vw, 18rem);
-  color: rgba(195,255,0,0.035);
+  color: rgba(14,165,233,0.035);
   line-height: 1;
   pointer-events: none;
   user-select: none;
@@ -147,16 +148,16 @@ body {
   text-transform: uppercase;
   margin-bottom: 32px;
 }
-.hero-eyebrow em { color: var(--lime); font-style: normal; }
+.hero-eyebrow em { color: var(--primary); font-style: normal; }
 .hero-title {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 800;
   font-size: clamp(3.8rem, 9vw, 7.5rem);
   line-height: 0.95;
   letter-spacing: -0.04em;
   margin-bottom: 28px;
 }
-.hero-title span { color: var(--lime); }
+.hero-title span { color: var(--primary); }
 .hero-sub {
   font-size: 1.15rem;
   color: var(--muted);
@@ -169,20 +170,20 @@ body {
 
 /* ── SECTIONS ── */
 .section     { padding: 110px 48px; }
-.section-alt { background: var(--black-2); }
+.section-alt { background: var(--background-alt); }
 .container   { max-width: 1080px; margin: 0 auto; }
 .container-sm { max-width: 700px; margin: 0 auto; }
 .section-label {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--lime);
+  color: var(--primary);
   margin-bottom: 14px;
 }
 .section-title {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 800;
   font-size: clamp(2rem, 4.5vw, 3.2rem);
   letter-spacing: -0.03em;
@@ -195,17 +196,17 @@ body {
 .step  { padding: 40px 40px 40px 0; border-top: 1px solid var(--border); }
 .step + .step { padding-left: 40px; border-left: 1px solid var(--border); }
 .step-num {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 800;
   font-size: 4rem;
-  color: var(--lime);
+  color: var(--primary);
   line-height: 1;
   letter-spacing: -0.04em;
   margin-bottom: 20px;
   display: block;
 }
 .step-name {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   margin-bottom: 10px;
@@ -223,9 +224,9 @@ body {
   border-bottom: 1px solid var(--border);
   transition: background 0.18s;
 }
-.niche:hover { background: var(--black-3); }
+.niche:hover { background: var(--background-alt); }
 .niche-emoji { font-size: 1.8rem; line-height: 1; }
-.niche-name  { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1rem; }
+.niche-name  { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 1rem; }
 
 /* ── PLANS ── */
 .plans { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
@@ -238,13 +239,13 @@ body {
   transition: border-color 0.2s;
 }
 .plan:hover  { border-color: #444; }
-.plan.featured { border-color: var(--lime); }
+.plan.featured { border-color: var(--primary); }
 .plan-badge {
   position: absolute;
   top: -13px; left: 28px;
-  background: var(--lime);
-  color: var(--black);
-  font-family: 'Syne', sans-serif;
+  background: var(--primary);
+  color: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 0.65rem;
   letter-spacing: 0.12em;
@@ -252,7 +253,7 @@ body {
   padding: 5px 12px;
 }
 .plan-name {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.15em;
@@ -261,7 +262,7 @@ body {
   margin-bottom: 12px;
 }
 .plan-price {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 800;
   font-size: 2.6rem;
   letter-spacing: -0.03em;
@@ -269,7 +270,7 @@ body {
   margin-bottom: 6px;
 }
 .plan-currency {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.9rem;
   color: var(--muted);
   margin-bottom: 32px;
@@ -281,26 +282,26 @@ body {
   gap: 10px;
   align-items: flex-start;
   padding: 9px 0;
-  border-bottom: 1px solid #181818;
+  border-bottom: 1px solid var(--border);
   font-size: 0.92rem;
-  color: #ccc;
+  color: var(--text);
 }
-.chk { color: var(--lime); font-weight: 700; flex-shrink: 0; }
+.chk { color: var(--primary); font-weight: 700; flex-shrink: 0; }
 .plan-btn {
   display: block;
   text-align: center;
   text-decoration: none;
   padding: 14px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
-  border: 1px solid #333;
-  color: var(--white);
+  border: 1px solid var(--border);
+  color: var(--text);
   transition: border-color 0.18s, color 0.18s, background 0.18s;
 }
-.plan-btn:hover          { border-color: var(--lime); color: var(--lime); }
-.plan-btn.feat           { background: var(--lime); color: var(--black); border-color: var(--lime); }
-.plan-btn.feat:hover     { background: transparent; color: var(--lime); }
+.plan-btn:hover          { border-color: var(--primary); color: var(--primary); }
+.plan-btn.feat           { background: var(--primary); color: white; border-color: var(--primary); }
+.plan-btn.feat:hover     { background: transparent; color: var(--primary); }
 
 /* ── FAQ ── */
 .faq-list { border-top: 1px solid var(--border); }
@@ -309,8 +310,8 @@ body {
   width: 100%;
   background: none;
   border: none;
-  color: var(--white);
-  font-family: 'DM Sans', sans-serif;
+  color: var(--text);
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 1.05rem;
   font-weight: 500;
   padding: 26px 0;
