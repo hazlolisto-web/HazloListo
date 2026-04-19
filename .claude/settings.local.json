@@ -12,7 +12,9 @@
       "Bash(dir \"C:\\\\Negocio Web\")",
       "Bash(npm install *)",
       "Bash(npm run *)",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Bash(dir \"C:\\\\Negocio Web\" /s /b)",
+      "Bash(findstr \".py\")"
     ]
   }
 }
