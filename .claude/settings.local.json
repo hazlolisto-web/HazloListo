@@ -14,7 +14,9 @@
       "Bash(npm run *)",
       "mcp__Claude_Preview__preview_start",
       "Bash(dir \"C:\\\\Negocio Web\" /s /b)",
-      "Bash(findstr \".py\")"
+      "Bash(findstr \".py\")",
+      "mcp__d8ce7c9a-a330-47e7-ac86-1a95d048273b__list_projects",
+      "mcp__d8ce7c9a-a330-47e7-ac86-1a95d048273b__confirm_cost"
     ]
   }
 }
