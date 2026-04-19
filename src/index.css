@@ -11,8 +11,8 @@
   --border:    #DDE1EA;
   --white:     #FFFFFF;
 
-  --font-display: 'Fraunces', Georgia, serif;
-  --font-body:    'Inter', sans-serif;
+  --font-display: 'Roboto', sans-serif;
+  --font-body:    'Roboto', sans-serif;
 }
 
 html { scroll-behavior: smooth; }
@@ -73,8 +73,7 @@ body {
 }
 .logo {
   font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 1.5rem;
   color: var(--ink);
   letter-spacing: -0.02em;
@@ -165,7 +164,6 @@ body {
 
 .hero-title {
   font-family: var(--font-display);
-  font-style: italic;
   font-weight: 900;
   font-size: clamp(3.5rem, 8.5vw, 7.5rem);
   line-height: 0.95;
@@ -206,7 +204,6 @@ body {
 }
 .section-title {
   font-family: var(--font-display);
-  font-style: italic;
   font-weight: 800;
   font-size: clamp(2rem, 4.5vw, 3.4rem);
   letter-spacing: -0.02em;
@@ -221,8 +218,7 @@ body {
 .step + .step { padding-left: 40px; border-left: 2px solid var(--neut); }
 .step-num {
   font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 4rem;
   color: var(--accent);
   line-height: 1;
@@ -306,8 +302,7 @@ body {
 }
 .plan-price {
   font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 2.8rem;
   letter-spacing: -0.03em;
   line-height: 1;
@@ -393,7 +388,6 @@ body {
 }
 .cta-title {
   font-family: var(--font-display);
-  font-style: italic;
   font-weight: 900;
   font-size: clamp(2.5rem, 6vw, 5.5rem);
   color: var(--white);
