@@ -405,6 +405,120 @@
 .db-btn-save:hover  { background: #0284c7; }
 .db-btn-save:disabled { opacity: 0.6; cursor: not-allowed; }
 
+/* ── FINANZAS ── */
+.fn-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.fn-chart-card {
+  background: #fff;
+  border: 1px solid #DDE1EA;
+  border-radius: 12px;
+  padding: 24px 20px 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.fn-chart-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.fn-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+.fn-filter-group { display: flex; gap: 8px; }
+.fn-filter-btn {
+  background: #fff;
+  border: 1.5px solid #DDE1EA;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.fn-filter-btn:hover   { border-color: #0EA5E9; color: #0EA5E9; }
+.fn-filter-btn.active  { background: #0EA5E9; border-color: #0EA5E9; color: #fff; }
+
+.fn-mes-select {
+  border: 1.5px solid #DDE1EA;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-family: 'Roboto', sans-serif;
+  color: #374151;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.fn-mes-select:focus { border-color: #0EA5E9; }
+
+.fn-tipo-badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 6px;
+  background: #F1F4F8;
+  color: #374151;
+}
+.fn-tipo-badge[data-tipo="Ingreso"] { background: #F0FDF4; color: #16A34A; }
+.fn-tipo-badge[data-tipo="Gasto"]   { background: #FEF2F2; color: #DC2626; }
+
+.fn-tipo-toggle {
+  display: flex;
+  gap: 8px;
+}
+.fn-tipo-btn {
+  flex: 1;
+  padding: 10px;
+  border: 1.5px solid #DDE1EA;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #64748b;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.fn-tipo-btn[data-tipo="Ingreso"].active { background: #F0FDF4; border-color: #22C55E; color: #16A34A; }
+.fn-tipo-btn[data-tipo="Gasto"].active   { background: #FEF2F2; border-color: #EF4444; color: #DC2626; }
+
+.db-fuente-tag {
+  background: #F0F9FF;
+  color: #0284C7;
+  border-radius: 6px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.db-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+}
+.db-checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #0EA5E9;
+  cursor: pointer;
+}
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .db-sidebar { display: none; }
@@ -412,5 +526,7 @@
   .db-stats   { grid-template-columns: repeat(2, 1fr); }
   .db-table th:nth-child(5),
   .db-table td:nth-child(5) { display: none; }
+  .fn-charts { grid-template-columns: 1fr; }
+  .fn-filters { flex-direction: column; align-items: flex-start; }
   .db-field-row { grid-template-columns: 1fr; }
 }
