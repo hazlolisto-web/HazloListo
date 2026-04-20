@@ -73,7 +73,7 @@ export default function Formulario() {
   }
 
   async function handleSubmit(e) {
-    e.preventDefault()
+    if (e) e.preventDefault()
     setEnviando(true)
     const payload = {
       ...data,
@@ -133,7 +133,7 @@ export default function Formulario() {
           </div>
         </div>
 
-        <form onSubmit={handleSubmit}>
+        <div>
 
           {/* ── PASO 1: TU NEGOCIO ── */}
           {paso === 0 && (
@@ -387,12 +387,12 @@ export default function Formulario() {
                 Siguiente →
               </button>
             ) : (
-              <button type="submit" className="fo-btn-submit" disabled={enviando}>
+              <button type="button" className="fo-btn-submit" disabled={enviando} onClick={handleSubmit}>
                 {enviando ? 'Enviando...' : '🚀 Enviar formulario'}
               </button>
             )}
           </div>
-        </form>
+        </div>
       </div>
 
       <p className="fo-footer-note">🔒 Tu información es privada y solo la usamos para crear tu web.</p>
