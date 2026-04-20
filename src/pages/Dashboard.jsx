@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import ProyectosView from '../components/ProyectosView'
-import FinanzasView  from '../components/FinanzasView'
+import ProyectosView   from '../components/ProyectosView'
+import FinanzasView    from '../components/FinanzasView'
+import FormulariosView from '../components/FormulariosView'
 import '../dashboard.css'
 
 const PASSWORD = 'hazlo2026'
@@ -63,14 +64,22 @@ export default function Dashboard() {
           >
             💰 Finanzas
           </span>
+          <span
+            className={`db-nav-item${view === 'formularios' ? ' active' : ''}`}
+            onClick={() => setView('formularios')}
+          >
+            📝 Formularios
+          </span>
         </nav>
-        <a href="/" className="db-sidebar-back">← Ver landing</a>
+        <a href="/formulario" className="db-sidebar-back" target="_blank" rel="noreferrer">↗ Ver formulario</a>
+        <a href="/" className="db-sidebar-back" style={{ marginTop: 4 }}>← Ver landing</a>
       </aside>
 
       {/* CONTENIDO */}
       <main className="db-main">
-        {view === 'proyectos' && <ProyectosView />}
-        {view === 'finanzas'  && <FinanzasView />}
+        {view === 'proyectos'   && <ProyectosView />}
+        {view === 'finanzas'    && <FinanzasView />}
+        {view === 'formularios' && <FormulariosView />}
       </main>
     </div>
   )

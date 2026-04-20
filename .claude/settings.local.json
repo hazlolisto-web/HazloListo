@@ -16,7 +16,11 @@
       "Bash(dir \"C:\\\\Negocio Web\" /s /b)",
       "Bash(findstr \".py\")",
       "mcp__d8ce7c9a-a330-47e7-ac86-1a95d048273b__list_projects",
-      "mcp__d8ce7c9a-a330-47e7-ac86-1a95d048273b__confirm_cost"
+      "mcp__d8ce7c9a-a330-47e7-ac86-1a95d048273b__confirm_cost",
+      "mcp__e1a740a6-85dc-44e8-939f-d0a65f720ba3__get_deployment",
+      "mcp__e1a740a6-85dc-44e8-939f-d0a65f720ba3__list_teams",
+      "mcp__e1a740a6-85dc-44e8-939f-d0a65f720ba3__list_deployments",
+      "mcp__e1a740a6-85dc-44e8-939f-d0a65f720ba3__list_projects"
     ]
   }
 }

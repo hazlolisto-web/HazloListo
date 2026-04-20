@@ -1,0 +1,372 @@
+/* ── FORMULARIO DE ONBOARDING — Hazlo Listo ── */
+
+.fo-wrap {
+  min-height: 100vh;
+  background: #F7F8FA;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 16px 60px;
+}
+
+/* HEADER */
+.fo-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 0 28px;
+  text-align: center;
+}
+.fo-logo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: #0D0F14;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+.fo-header-sub {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* CARD */
+.fo-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #DDE1EA;
+  border-radius: 16px;
+  padding: 36px 40px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+
+/* PROGRESO */
+.fo-progress-wrap { margin-bottom: 36px; }
+.fo-steps-labels {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.fo-step-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  transition: color 0.2s;
+}
+.fo-step-label.active { color: #0EA5E9; }
+.fo-step-label.done   { color: #22C55E; }
+.fo-progress-bar {
+  height: 4px;
+  background: #EEF1F5;
+  border-radius: 99px;
+  overflow: hidden;
+}
+.fo-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0EA5E9, #7C3AED);
+  border-radius: 99px;
+  transition: width 0.4s ease;
+}
+
+/* PASO */
+.fo-paso-title {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #0D0F14;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+.fo-paso-sub {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 28px;
+}
+
+/* CAMPOS */
+.fo-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.fo-field label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #374151;
+}
+.fo-optional {
+  font-weight: 400;
+  color: #94a3b8;
+  font-size: 0.8rem;
+}
+.fo-field input,
+.fo-field select,
+.fo-field textarea {
+  border: 1.5px solid #DDE1EA;
+  border-radius: 8px;
+  padding: 11px 14px;
+  font-size: 0.95rem;
+  font-family: 'Roboto', sans-serif;
+  color: #0D0F14;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s;
+  width: 100%;
+}
+.fo-field input:focus,
+.fo-field select:focus,
+.fo-field textarea:focus { border-color: #0EA5E9; }
+.fo-field textarea { resize: vertical; }
+
+.fo-hint {
+  font-size: 0.82rem;
+  color: #64748b;
+  background: #F0F9FF;
+  border: 1px solid #BAE6FD;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-top: 4px;
+}
+
+/* RADIO */
+.fo-radio-group { display: flex; flex-direction: column; gap: 10px; }
+.fo-radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  color: #374151;
+  cursor: pointer;
+}
+.fo-radio input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #0EA5E9;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* PLAN CARDS */
+.fo-plan-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.fo-plan-card {
+  border: 1.5px solid #DDE1EA;
+  border-radius: 10px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.fo-plan-card:hover { border-color: #0EA5E9; }
+.fo-plan-card.active {
+  border-color: #0EA5E9;
+  background: #F0F9FF;
+}
+.fo-plan-name  { font-weight: 700; font-size: 0.92rem; color: #0D0F14; }
+.fo-plan-precio { font-weight: 900; font-size: 1.1rem; color: #0EA5E9; }
+.fo-plan-desc  { font-size: 0.78rem; color: #64748b; }
+
+/* ESTILO GRID */
+.fo-estilo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.fo-estilo-card {
+  border: 1.5px solid #DDE1EA;
+  border-radius: 10px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.fo-estilo-card:hover { border-color: #7C3AED; }
+.fo-estilo-card.active {
+  border-color: #7C3AED;
+  background: #F5F3FF;
+}
+.fo-estilo-name { font-weight: 700; font-size: 0.92rem; color: #0D0F14; }
+.fo-estilo-desc { font-size: 0.78rem; color: #64748b; }
+
+/* SECCIONES */
+.fo-secciones-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+.fo-seccion-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1.5px solid #DDE1EA;
+  border-radius: 8px;
+  padding: 11px 14px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.fo-seccion-card input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  accent-color: #0EA5E9;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.fo-seccion-card:hover { border-color: #0EA5E9; background: #F0F9FF; }
+.fo-seccion-card.active { border-color: #0EA5E9; background: #F0F9FF; color: #0284C7; font-weight: 700; }
+
+/* REDES */
+.fo-redes { display: flex; flex-direction: column; gap: 10px; }
+.fo-red-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1.5px solid #DDE1EA;
+  border-radius: 8px;
+  padding: 4px 14px 4px 12px;
+  transition: border-color 0.15s;
+}
+.fo-red-input:focus-within { border-color: #0EA5E9; }
+.fo-red-input span { font-size: 1.1rem; flex-shrink: 0; }
+.fo-red-input input {
+  border: none;
+  padding: 8px 0;
+  font-size: 0.92rem;
+  outline: none;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #0D0F14;
+}
+
+/* NAVEGACIÓN */
+.fo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  gap: 12px;
+}
+.fo-btn-back {
+  background: #F1F4F8;
+  color: #374151;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 22px;
+  font-size: 0.92rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.fo-btn-back:hover { background: #DDE1EA; }
+.fo-btn-next {
+  margin-left: auto;
+  background: #0D0F14;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 0.95rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.fo-btn-next:hover { background: #0EA5E9; }
+.fo-btn-submit {
+  margin-left: auto;
+  background: #0EA5E9;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.fo-btn-submit:hover    { background: #0284c7; }
+.fo-btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+/* ERROR */
+.fo-error {
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+  color: #DC2626;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.88rem;
+  margin-top: 16px;
+}
+
+/* SUCCESS */
+.fo-success {
+  max-width: 500px;
+  margin: 60px auto 0;
+  background: #fff;
+  border: 1px solid #DDE1EA;
+  border-radius: 16px;
+  padding: 48px 40px;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+.fo-success-icon { font-size: 3rem; margin-bottom: 16px; }
+.fo-success h2 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #0D0F14;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+.fo-success p { color: #374151; font-size: 0.95rem; line-height: 1.7; margin-bottom: 8px; }
+.fo-success-sub { color: #64748b !important; font-size: 0.88rem !important; margin-bottom: 28px !important; }
+.fo-btn-wa {
+  display: inline-block;
+  background: #25D366;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 14px 28px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  transition: background 0.18s;
+}
+.fo-btn-wa:hover { background: #1ebe5a; }
+.fo-back-link {
+  display: block;
+  color: #64748b;
+  font-size: 0.85rem;
+  text-decoration: none;
+  margin-top: 12px;
+}
+.fo-back-link:hover { color: #0EA5E9; }
+
+/* FOOTER NOTE */
+.fo-footer-note {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  .fo-card { padding: 24px 20px; }
+  .fo-plan-cards,
+  .fo-estilo-grid,
+  .fo-secciones-grid { grid-template-columns: 1fr; }
+  .fo-steps-labels { gap: 6px; }
+  .fo-step-label { font-size: 0.68rem; }
+}
